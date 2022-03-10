@@ -1,0 +1,19 @@
+:root {
+  --text-color: #222;
+  --white-color: #fff;
+  --hover-color: #f65e39;
+  --primary-color: #f65e39;
+  --select-color: #222;
+  --sub-title-color: #555;
+}
+
+::placeholder{
+  color:#000;
+  font-weight: 500;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+

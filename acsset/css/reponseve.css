@@ -1,0 +1,313 @@
+
+/* tablet & mobile */
+@media (max-width: 1023px){
+  .hide-table-mobile {
+    display: none;
+  }
+
+  .navigation-btn-menu{
+    display: block;
+  }
+
+  .navigation-icon-rp {
+    display: block;
+  }
+
+  .grid.wide {
+    width: calc(100% - 40px);
+  }
+
+
+  .slide img{
+    object-fit: cover;
+    height: 100%;
+    
+  }
+
+  .section-list{
+    margin: 0 10px;
+  }
+
+  .button-btn-left{
+    left: -12px;
+  }
+
+  .button-btn-right{
+    right: -12px;
+  }
+
+  .app-mobile{
+    flex-wrap: wrap;
+  }
+
+  .download-plance-rp{
+    justify-content: center;
+  }
+
+  .app-mobile{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .download-img{
+    width: 60%;
+    padding: 10px;
+  }
+
+  .app-mobile-img{
+    margin-bottom: 20px;
+  }
+
+  .footer-copyright-wr {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .footer-support-col{
+    margin-top: 20px;
+  }
+
+  .discovery-item-name{
+    font-size: 24px;
+  }
+}
+
+/* tablet */
+@media (min-width: 740px ) and (  max-width: 1023px) {
+  .hide-tablet{
+    display: none;
+  }
+
+  .slider-wrapper {
+    height: 250px;
+    object-fit: contain;
+    
+  }
+
+  .discovery-list{
+    height: 460px;
+  }
+
+  .navigation-icon-rp{
+    transform: translateY(5px);
+    margin-left: 20px;
+    flex: 1;
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .navigation{
+    padding: 5px;
+  }
+
+  .fz-16{
+    font-size: 16px;
+  }
+
+  .navigation-search{
+    margin-left: 8px;
+  }
+
+  .navigation{
+    padding: 5px 25px;
+    justify-content: space-between;
+  }
+
+  .navigation-search-suggest-list{
+    height: 40vh;
+  
+    }
+}
+
+
+
+
+/* mobile */
+@media ( max-width: 739px ) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .navigation-search-history{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: var(--white-color);
+
+  }
+
+  .navigation-search-suggest-list{
+  height: 45vh;
+
+  }
+
+  .navigation-search{
+    flex: 1;
+  }
+
+  .navigation-icon-btn-rp{
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .slider-wrapper {
+    height: 200px;
+    object-fit: contain;
+    
+  }
+
+  .slider{
+    margin-top: 60px;
+  }
+
+  .section{
+    margin-top: 40px;
+  }
+
+  .discovery-list{
+    height: 360px;
+  }
+
+  .download-app-logo svg {
+    height: 50px;
+  }
+
+  .download-app-heading{
+    font-size: 22px;
+  }
+
+  .download-app-logo {
+    line-height: 35px;
+  }
+
+  .download-app-cotent{
+    margin-top: 15px;
+  }
+
+  .footer-item img{
+    margin-left: -22px;
+  }
+
+  .transaction{
+    margin-top: 30px;
+  }
+
+  .transaction-heading{
+    margin-bottom: 6px;
+  }
+
+  .footer-copyright{
+    padding: 25px;
+  }
+  
+  .download-plance{
+    margin-top: 30px;
+  }
+
+  .download-img{
+    width: 90%;
+  }
+
+  .navigation{
+    padding: 5px 10px;
+    justify-content: space-between;
+  }
+  
+  .navigation-input{
+    width: 100%;
+  }
+
+  
+}
+
+
+.call-phone-fixed{
+  background-color: rgba(0,175,242,.8);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  border-radius: 50%;
+  animation: bphone 2.3s ease-in-out infinite;
+  z-index: 10;
+ 
+}
+
+@keyframes bphone {
+  0% {
+    transform: rotate(0) scale(1.2) skew(1deg);
+    opacity: .2;
+  }
+
+
+  50% {
+      transform: rotate(0) scale(1.5) skew(1deg);
+      opacity: .2;
+  }
+
+  100% {
+      transform: rotate(0) scale(1.2) skew(1deg);
+      opacity: .2;
+  }
+}
+
+.call-phone{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
+  background-color: #0066a6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  z-index: 1;
+  animation: phone 1s ease-in-out infinite ;
+  z-index: 10;
+}
+
+@keyframes phone {
+  
+  0% {
+    transform: rotate(0) scale(1) skew(1deg);
+}
+
+10% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+}
+
+20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+}
+
+30% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+}
+
+40% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+}
+
+50% {
+    transform: rotate(0) scale(1) skew(1deg);
+}
+
+100% {
+    transform: rotate(0) scale(1) skew(1deg);
+}
+  
+}
+
+
+
+
+
+
